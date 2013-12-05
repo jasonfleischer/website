@@ -27,21 +27,87 @@
 		</div>
 
 		<nav class="navbar navbar-inverse" role="navigation">
-
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home">&nbsp;Home</span></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About</a></li>
+				  	<li><a href="#"><span class="glyphicon glyphicon-file"></span>&nbsp;Resume</a></li>
+				  	<li><a href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
+						<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a>
+					</li>
+				  	<li><a href="http://www.facebook.com/Jason.R.A.Fleischer" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp;FaceBook</a></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" name="q" id="q" placeholder="Google Search">
+				  	</div>
+				  	<button type="submit" class="btn btn-default" onclick="http://www.google.com/search?q=buzz">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</form>		   
+			</div>
 		</nav>
 
-		
+		<!-- 
 		<div class="row">
   			<div class="col-md-4 center-block">Email</div>
   			<div class="col-md-4">Resume</div>
   			<div class="col-md-4">Facebook</div>
-		</div>
+		</div>-->
 
 		<div class="panel panel-default">
 	  		<div class="panel-body">
-				Personal Information:
+
+					<div><h4>Personal Information:</h4></div> 
+					<div class="pull-right" ><a href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
+						<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a></div>
+
+				
+<br />
+	<div><p>JASON R. A. FLEISCHER</p></div>
+
+
+				<div style="cursor:pointer" onclick="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
+					<small>Email:</small> jason_fleischer@hotmail.ca&nbsp;<span class="glyphicon glyphicon-envelope"></span>
+				</div>
+				<div style="cursor:pointer" onclick="window.open('https://www.google.com/maps/preview#!data=!1m4!1m3!1d15650!2d-75.7008383!3d45.3691621')">
+					<small>Residence:</small>  1435 Prince of Wales, Ottawa, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
+				</div>
+				<div style="cursor:pointer" onclick="window.open('https://www.google.com/maps/preview#!q=Sault+Ste.+Marie%2C+ON%2C+Canada&data=!4m15!2m14!1m13!1s0x4d36311508818c7b%3A0xc55b0eb513db21cd!3m8!1m3!1d15592!2d-75.7008383!3d45.3691621!3m2!1i1011!2i534!4f13.1!4m2!3d46.521858!4d-84.3460896')">
+					<small >Hometown:</small> Sault Ste. Marie, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
+				</div>
+				<br />
+				<div><small>Cell:</small> 613-407-0602&nbsp;&nbsp;&nbsp;<a href="tel:613-407-0602">Call me&nbsp;<span class="glyphicon glyphicon-phone"></span></a></div>
+
+				
 	  		</div>
 		</div>
+
+		<div class="panel panel-default">
+		  	<div class="panel-body">
+				<div class="resourcecontent resourcepdf">
+	  				<object id="resourceobject" data="doc/resume.pdf" type="application/pdf" 
+							width="100%" height="600" style="width: 100%; height: 400px;">
+						<param name="src" value="doc/resume.pdf">
+						Click <a href="doc/resume.pdf">Resume.pdf</a> link to view the file.
+	 				 </object>
+				</div>
+
+			</div>
+		</div>	
+		<div class="pull-left" style="cursor:pointer" onclick="location.href='#top'"><p><small>Scroll to top</small></p></div>
+		<div class="pull-right"><p><small>Last updated:</small> December 5th 2013</p></div>
+		
 </body>
 
 </html>
