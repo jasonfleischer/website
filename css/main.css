@@ -1,6 +1,8 @@
-@media (min-width: @screen-sm-min) { 
-	#googleSearch{
-		display:none;
-	}
-
+/*Jason Fleischer*/
+@media screen and (max-width: 1000px) {
+	#googleSearch{ display:none;}
 }
+@media screen and (min-width: 1000px) {
+	#callMe{ display:none; }
+}
+.pointer{ cursor:pointer; }

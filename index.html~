@@ -5,6 +5,7 @@
 
 <head>
     <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>· Jason Fleischer · Developer</title>
 	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/main.css">
@@ -16,20 +17,13 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
-	
 </head>
 
 <body>
-
-	
-</div>
 	<div id="content" class="center-block container">
-
-
-		<div class="page-header ">
+		<div class="page-header">
 	  		<h1>Jason Fleischer <small>Mobile and Web Developer</small></h1>
 		</div>
-
 		<nav class="navbar navbar-inverse" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header" onclick="homePage()">
@@ -39,22 +33,21 @@
 				  	<span class="icon-bar"></span>
 				  	<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+				<a class="navbar-brand" href="#home"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
 			</div>
 
-
-<div class="navbar-collapse in" id="bs-example-navbar-collapse-1" style="height: auto;">
-          <ul class="nav navbar-nav">
-            		<li id="aboutM" onclick="aboutPage()" class="active"><a href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About</a></li>
-				  	<li id="resumeM" onclick="resumePage()"><a href="#"><span class="glyphicon glyphicon-file"></span>&nbsp;Resume</a></li>
+			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" >
+          		<ul class="nav navbar-nav">
+            			<li id="aboutM" onclick="aboutPage()" class="active"><a href="#about"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About</a></li>
+				  	<li id="resumeM" onclick="resumePage()"><a href="#resume"><span class="glyphicon glyphicon-file"></span>&nbsp;Resume</a></li>
 				  	<li id="emailM" onclick="email()"><a href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
 						<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a>
 					</li>
-				  	<li id="fbM" onclick="openFaceBook()"><a href="http://www.facebook.com/Jason.R.A.Fleischer" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp;FaceBook</a></li>
-
-
-          </ul>
-<form id="googleSearch" class="navbar-form navbar-right" role="search">
+				  	<li id="fbM" onclick="openFaceBook()"><a href="http://www.facebook.com/Jason.R.A.Fleischer" target="_blank">
+						<span class="glyphicon glyphicon-user"></span>&nbsp;FaceBook</a>
+					</li>
+          		</ul>
+				<form id="googleSearch" class="navbar-form navbar-right" role="search">
 					<div class="form-group">
 						<input type="text" id="q" class="form-control" placeholder="Google Search">
 				  	</div>
@@ -62,80 +55,44 @@
 						<span class="glyphicon glyphicon-search"></span>
 					</button>
 				</form>	
-
-        </div>
-
-			<!-- Collect the nav links, forms, and other content for toggling
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<!--<ul class="nav navbar-nav">
-					<li id="aboutM" onclick="aboutPage()" class="active"><a href="#"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About</a></li>
-				  	<li id="resumeM" onclick="resumePage()"><a href="#"><span class="glyphicon glyphicon-file"></span>&nbsp;Resume</a></li>
-				  	<li id="emailM" onclick="email()"><a href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
-						<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a>
-					</li>
-				  	<li id="fbM" onclick="openFaceBook()"><a href="http://www.facebook.com/Jason.R.A.Fleischer" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp;FaceBook</a></li>
-				</ul>
-				<form class="navbar-form navbar-right" role="search">
-					<div class="form-group">
-						<input type="text" id="q" class="form-control" placeholder="Google Search">
-				  	</div>
-				  	<button type="submit" class="btn btn-default" onclick="googleSearch()">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</form>		   
-			</div>-->
+        		</div>
 		</nav>
-
-		<!-- 
-		<div class="row">
-  			<div class="col-md-4 center-block">Email</div>
-  			<div class="col-md-4">Resume</div>
-  			<div class="col-md-4">Facebook</div>
-		</div>-->
 
 		<div id='personalInfo' class="panel panel-default">
 	  		<div class="panel-body">
-
-
 				<div class="row">
   					<div class="col-md-6 "><h4 class="pull-left">Personal Information:</h4></div>
   					<div class="col-md-6 "><a class="pull-right" href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
-	    					<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a></div>
+	    					<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a>
+					</div>
 				</div>
 				<br />
 				<div><p>JASON R. A. FLEISCHER</p></div>
-
-
-				<div style="cursor:pointer" onclick="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
+				<div class="pointer" onclick="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
 					<small>Email:</small> jason_fleischer@hotmail.ca&nbsp;<span class="glyphicon glyphicon-envelope"></span>
 				</div>
-				<div style="cursor:pointer" onclick="window.open('https://www.google.com/maps/preview#!data=!1m4!1m3!1d15650!2d-75.7008383!3d45.3691621')">
+				<div class="pointer" onclick="window.open('https://www.google.com/maps/preview#!data=!1m4!1m3!1d15650!2d-75.7008383!3d45.3691621')">
 					<small>Residence:</small>  1435 Prince of Wales, Ottawa, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
 				</div>
-				<div style="cursor:pointer" onclick="window.open('https://www.google.com/maps/preview#!q=Sault+Ste.+Marie%2C+ON%2C+Canada&data=!4m15!2m14!1m13!1s0x4d36311508818c7b%3A0xc55b0eb513db21cd!3m8!1m3!1d15592!2d-75.7008383!3d45.3691621!3m2!1i1011!2i534!4f13.1!4m2!3d46.521858!4d-84.3460896')">
+				<div class="pointer" onclick="window.open('https://www.google.com/maps/preview#!q=Sault+Ste.+Marie%2C+ON%2C+Canada')">
 					<small >Hometown:</small> Sault Ste. Marie, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
 				</div>
 				<br />
-				<div><small>Cell:</small> 613-407-0602&nbsp;&nbsp;&nbsp;<a href="tel:613-407-0602">Call me&nbsp;<span class="glyphicon glyphicon-phone"></span></a></div>
+				<div><small>Cell:</small> 613-407-0602&nbsp;&nbsp;&nbsp;<a id="callMe" href="tel:613-407-0602">Call me&nbsp;
+					<span class="glyphicon glyphicon-phone"></span></a>
+				</div>
 				<br />
-
-
-				<div onclick="toggleBio()" style="cursor:pointer" class="panel panel-default">
-				  <div  class="panel-body"  >
-
-				  <h5 id="bioHeader" >About Myself:</h5>
-
-				    <p id="bioContent">As indicated in my resume, I have received my Commercial pilot's license with various ratings from Algonquin Flight Center in North Bay, ON. I have also gained valuable work experience from my employment with Transwest Air. This includes micro-management, dispatching, billing, computer and multiple ground handling skills. After being laid off due to lack of work within this company, I decided to go back to school. I have completed my second year of computer science and am currently in my third year. So far I have learned such computer languages as Java, C, C++, C#, Objective-C, VB, Javascript, Assembly, Jscript/JQuery, Scheme, Prolog and Processing. Although I still have a passion for aviation, I also have an enthusiasm for computers and plan to pursue both in the future. My last Coop placement was for 8-months at Public Works Government Services. Here I have gained experience in web and mobile phone development. I am now looking for a coop placement that will challenge and further my skills.
-					<br />
+				<div onclick="toggleBio()" class="panel panel-default pointer">
+					<div  class="panel-body"  >
+				  		<h5 id="bioHeader">About Myself:</h5>
+				    		<p id="bioContent">As indicated in my resume, I have received my Commercial pilot's license with various ratings 
+from Algonquin Flight Center in North Bay, ON. I have also gained valuable work experience from my employment with Transwest Air. This includes micro-management, dispatching, billing, computer and multiple ground handling skills. After being laid off due to lack of work within this company, I decided to go back to school. I have completed my second year of computer science and am currently in my third year. So far I have learned such computer languages as Java, C, C++, C#, Objective-C, VB, Javascript, Assembly, Jscript/JQuery, Scheme, Prolog and Processing. Although I still have a passion for aviation, I also have an enthusiasm for computers and plan to pursue both in the future. My last Coop placement was for 8-months at Public Works Government Services. Here I have gained experience in web and mobile phone development. I am now looking for a coop placement that will challenge and further my skills.
+						<br />
 					If my qualifications are of interest to you, I would be delighted to meet with you to further discuss employment opportunities.  Should you require additional information or need to discuss my qualifications in more detail, please contact me. In the event that there are no appropriate openings available at this time, I would very much appreciate the opportunity to talk with you more broadly about my job search campaign. Thank you in advance for your time and consideration.
-				    </p>
-				
-				  </div>
-		    </div>  
-		</div>
-
-
-	  		
+				    		</p>		
+					</div>
+		    		</div>  
+			</div>
 		</div>
 
 		<div id='resume' style="display:none;" class="panel panel-default">
@@ -147,12 +104,11 @@
 						Click <a href="doc/resume.pdf">Resume.pdf</a> link to view the file.
 	 				 </object>
 				</div>
-
 			</div>
 		</div>	
-		<div class="pull-left" style="cursor:pointer" onclick="location.href='#top'"><p><small>Scroll to top</small></p></div>
-		<div class="pull-right"><p><small>Last updated:</small> December 5th 2013</p></div>
-		
+		<div class="pull-left pointer" onclick="window.scrollTo(0,0);"><p><small>Scroll to top</small></p></div>
+		<div class="pull-right"><p><small>Last updated:</small> December 5th 2013</p></div>	
+	</div>
 </body>
 
 </html>
