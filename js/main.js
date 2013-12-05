@@ -17,7 +17,7 @@ function homePage(){
 	document.getElementById('personalInfo').style.display = 'block';
 	document.getElementById('resume').style.display = 'block';
 
-	document.getElementById('bioHeader').innerHTML = 'Click here to learn more about myself';
+	document.getElementById('bioHeader').innerHTML = 'Click here see more information';
 	document.getElementById('bioContent').style.display = 'none';
 	document.getElementById("bs-example-navbar-collapse-1").className = "navbar-collapse collapse";		
 }
@@ -62,7 +62,7 @@ function googleSearch(){
 }
 function toggleBio(){
 	if(document.getElementById('bioContent').style.display != 'none'){
-		document.getElementById('bioHeader').innerHTML = 'Click here to learn more about myself';		
+		document.getElementById('bioHeader').innerHTML = 'Click here to see more information';		
 		document.getElementById('bioContent').style.display = 'none';
 	}else{
 		document.getElementById('bioHeader').innerHTML = 'About myself:';		
