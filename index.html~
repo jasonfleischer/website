@@ -62,7 +62,7 @@
 	  		<div class="panel-body">
 				<div class="row">
   					<div class="col-md-6 "><h4 class="pull-left">Personal Information:</h4></div>
-  					<div class="col-md-6 "><a class="pull-right" href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
+  					<div class="col-md-6 "><a id="pIemailMe" class="pull-right" href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
 	    					<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a>
 					</div>
 				</div>
@@ -78,7 +78,7 @@
 					<small >Hometown:</small> Sault Ste. Marie, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
 				</div>
 				<br />
-				<div><small>Cell:</small> 613-407-0602&nbsp;&nbsp;&nbsp;<a id="callMe" href="tel:613-407-0602">Call me&nbsp;
+				<div><small>Cell:</small> 613-407-0602&nbsp;&nbsp;&nbsp;<a id="callMe" href="tel:613-407-0602">Call Me&nbsp;
 					<span class="glyphicon glyphicon-phone"></span></a>
 				</div>
 				<br />
@@ -101,7 +101,7 @@ from Algonquin Flight Center in North Bay, ON. I have also gained valuable work 
 	  				<object id="resourceobject" data="doc/resume.pdf" type="application/pdf" 
 							width="100%" height="600" style="width: 100%; height: 400px;">
 						<param name="src" value="doc/resume.pdf">
-						Click <a href="doc/resume.pdf">Resume.pdf</a> link to view the file.
+						Click <a href="doc/resume.pdf">HERE</a> to dowload my resume.
 	 				 </object>
 				</div>
 			</div>

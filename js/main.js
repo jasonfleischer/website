@@ -18,7 +18,8 @@ function homePage(){
 	document.getElementById('resume').style.display = 'block';
 
 	document.getElementById('bioHeader').innerHTML = 'Click here to learn more about myself';
-	document.getElementById('bioContent').style.display = 'none';	
+	document.getElementById('bioContent').style.display = 'none';
+	document.getElementById("bs-example-navbar-collapse-1").className = "navbar-collapse collapse";		
 }
 function aboutPage(){
 	document.getElementById("aboutM").className = "active";	
@@ -30,6 +31,7 @@ function aboutPage(){
 
 	document.getElementById('bioHeader').innerHTML = 'About myself:';
 	document.getElementById('bioContent').style.display = 'block';	
+	document.getElementById("bs-example-navbar-collapse-1").className = "navbar-collapse collapse";
 }
 function resumePage(){
 	document.getElementById("aboutM").className = "";	
@@ -38,18 +40,21 @@ function resumePage(){
 	document.getElementById("fbM").className = "";
 	document.getElementById('personalInfo').style.display = 'none';
 	document.getElementById('resume').style.display = 'block';
+	document.getElementById("bs-example-navbar-collapse-1").className = "navbar-collapse collapse";
 }
 function email(){
 	document.getElementById("aboutM").className = "";
 	document.getElementById("resumeM").className = "";
 	document.getElementById("emailM").className = "active";
 	document.getElementById("fbM").className = "";
+	document.getElementById("bs-example-navbar-collapse-1").className = "navbar-collapse collapse";
 }
 function openFaceBook(){
 	document.getElementById("aboutM").className = "";
 	document.getElementById("resumeM").className = "";
 	document.getElementById("emailM").className = "";
 	document.getElementById("fbM").className = "active";
+	document.getElementById("bs-example-navbar-collapse-1").className = "navbar-collapse collapse";
 }
 function googleSearch(){
 	if(document.getElementById('q').value.length>0)

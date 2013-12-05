@@ -18,7 +18,9 @@ function homePage(){
 	document.getElementById('resume').style.display = 'block';
 
 	document.getElementById('bioHeader').innerHTML = 'Click here to learn more about myself';
-	document.getElementById('bioContent').style.display = 'none';	
+	document.getElementById('bioContent').style.display = 'none';
+
+	document.getElementById("bs-example-navbar-collapse-1").className = "navbar-collapse collapse";		
 }
 function aboutPage(){
 	document.getElementById("aboutM").className = "active";	
