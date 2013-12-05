@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Jason Fleischer</title>
-
+	<link rel="stylesheet" href="css/main.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Optional theme -->
@@ -16,7 +16,16 @@
 </head>
 
 <body>
-	<p>hello </p>
+	<div id="content">
+		<nav class="navbar navbar-inverse" role="navigation">
+
+		</nav>
+
+		<div class="page-header">
+	  		<h1>Jason Fleischer <small>Mobile and Web Developer</small></h1>
+		</div>
+
+	</div>
 </body>
 
 </html>
