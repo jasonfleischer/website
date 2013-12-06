@@ -1,6 +1,6 @@
+<!doctype html>
 <!--Jason Fleischer-->
 
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -68,7 +68,7 @@
 				</div>
 				<br />
 				<div><p>JASON R. A. FLEISCHER</p></div>
-				<div class="pointer" onclick="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
+				<div class="pointer" onclick="window.location.href = 'mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer';">
 					<small>Email:</small> jason_fleischer@hotmail.ca&nbsp;<span class="glyphicon glyphicon-envelope"></span>
 				</div>
 				<div class="pointer" onclick="window.open('https://www.google.com/maps/preview#!data=!1m4!1m3!1d15650!2d-75.7008383!3d45.3691621')">
@@ -99,7 +99,7 @@ from Algonquin Flight Center in North Bay, ON. I have also gained valuable work 
 		  	<div class="panel-body">
 				<div class="resourcecontent resourcepdf">
 	  				<object id="resourceobject" data="doc/resume.pdf" type="application/pdf" 
-							width="100%" height="600" style="width: 100%; height: 400px;">
+							 style="width: 100%; height: 400px;">
 						<param name="src" value="doc/resume.pdf">
 						Click <a href="doc/resume.pdf">HERE</a> to download my resume
 	 				 </object>
