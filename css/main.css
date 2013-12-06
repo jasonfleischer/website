@@ -4,7 +4,7 @@
 }
 @media screen and (min-width:1000px) {
 	#callMe{ display:none;}
-	p{ text-indent:40px;};
+	p{ text-indent:40px;}
 }
 .pointer{ cursor:pointer;}
 #pIemailMe{ padding-top:10px;}
