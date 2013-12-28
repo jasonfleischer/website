@@ -8,17 +8,6 @@
 	p{ text-indent:40px;
 }
 .pointer{ cursor:pointer;}
-#pIemailMe{ padding-top:10px;}
-#resourceobject{ width:100%; height:400px;}
-#resume{ display:none;}
-
-#content{
-	max-width:1000px;
-}
-#subH1{
-	color: #EEE !important;
-}
-
 .page-header{
 	background-image:url('../img/banner.jpg');
 	background-position:center top;
@@ -28,3 +17,10 @@
 	color: #FFF !important;
 	text-shadow: 1px 1px #000000;
 }
+#pIemailMe{ padding-top:10px;}
+#resourceobject{ width:100%; height:400px;}
+#resume{ display:none;}
+#content{ max-width:1000px; }
+#subH1{ color: #EEE; }
+
+
