@@ -6,7 +6,7 @@
 <head>
     	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    	<title> Jason Fleischer · Computer Scientist</title>
+    	<title>Jason Fleischer · Computer Scientist</title>
 	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -23,23 +23,24 @@
 <body>
 	<div id="content" class="center-block container">
 		<div class="page-header">
-	  		<h1>Jason Fleischer <!--<small id="subH1">Computer Scientist</small>--></h1>
+	  		<h1>Jason Fleischer</h1>
+			<h4 id="subH1">Computer Scientist</h4>
 		</div>
 		<nav class="navbar navbar-inverse" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header" onclick="homePage()">
+			<div class="navbar-header" >
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 				  	<span class="icon-bar"></span>
 				  	<span class="icon-bar"></span>
 				  	<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+				<a onclick="homePage()" class="navbar-brand" href="#home"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
 			</div>
 
 			<div class="navbar-collapse collapse" id="navbar-collapse-1" >
           		<ul class="nav navbar-nav">
-            			<li id="aboutM" onclick="aboutPage()" class="active"><a href="#about"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About</a></li>
+            			
 				  	<li id="resumeM" onclick="resumePage()"><a href="#resume"><span class="glyphicon glyphicon-file"></span>&nbsp;Resume</a></li>
 				  	<li id="emailM" onclick="email()"><a href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
 						<span class="glyphicon glyphicon-envelope"></span>&nbsp;Email Me</a>
@@ -49,22 +50,13 @@
 					</li>
           		</ul>
 
-				<!--<form id="googleSearch" class="navbar-form navbar-right" role="search">
-					<div class="form-group">
-						<input type="text" id="q" class="form-control" placeholder="Google Search">
-				  	</div>
-				  	<button type="submit" class="btn btn-default" onclick="googleSearch()">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</form>-->	
-
 				<a id="vCard" class="navbar-right" style="display:hidden; font-size:20px; padding-top:11px;" href="doc/vCard.vcf">
 						<span class="glyphicon glyphicon-download"></span>&nbsp;vCard</a>
         		</div>
 		</nav>
 
-		<div id='personalInfo' class="panel panel-default">
-	  		<div class="panel-body">
+		<div id='personalInfo' class="">
+	  		<div class="">
 				<div class="row">
   					<div class="col-md-6 "><h4 class="pull-left">Personal Information:</h4></div>
   					<div class="col-md-6 "><a id="pIemailMe" class="pull-right" href="mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer">
@@ -72,20 +64,23 @@
 					</div>
 				</div>
 				<br />
-				<div>JASON R. A. FLEISCHER</div>
-				<br />
-				<div class="pointer" onclick="window.location.href = 'mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer';">
-					<small>Email:</small> jason_fleischer@hotmail.ca&nbsp;<span class="glyphicon glyphicon-envelope"></span>
-				</div>
-				<div class="pointer" onclick="window.open('https://www.google.com/maps/preview#!data=!1m4!1m3!1d15650!2d-75.7008383!3d45.3691621')">
-					<small>Residence:</small>  1435 Prince of Wales, Ottawa, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
-				</div>
-				<div class="pointer" onclick="window.open('https://www.google.com/maps/preview#!q=Sault+Ste.+Marie%2C+ON%2C+Canada')">
-					<small >Hometown:</small> Sault Ste. Marie, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
-				</div>
-				<br />
-				<div><small>Cell:</small> 613-407-0602&nbsp;&nbsp;&nbsp;<a id="callMe" href="tel:613-407-0602">Call Me&nbsp;
-					<span class="glyphicon glyphicon-phone"></span></a>
+				<div id="contactInfo">
+					<div>JASON R. A. FLEISCHER</div>
+					<br />
+				
+					<div class="pointer" onclick="window.open('https://www.google.com/maps/preview#!data=!1m4!1m3!1d15650!2d-75.7008383!3d45.3691621')">
+						<small>Residence:</small>  1435 Prince of Wales, Ottawa, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
+					</div>
+					<div class="pointer" onclick="window.open('https://www.google.com/maps/preview#!q=Sault+Ste.+Marie%2C+ON%2C+Canada')">
+						<small >Hometown:</small> Sault Ste. Marie, Ontario, Canada&nbsp;<span class="glyphicon glyphicon-globe"></span>
+					</div>
+					<br />
+					<div class="pointer" onclick="window.location.href = 'mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer';">
+						<small>Email:</small> jason_fleischer@hotmail.ca&nbsp;<span class="glyphicon glyphicon-envelope"></span>
+					</div>
+					<div><small>Cell:</small> 613-407-0602&nbsp;&nbsp;&nbsp;<a id="callMe" href="tel:613-407-0602">Call Me&nbsp;
+						<span class="glyphicon glyphicon-phone"></span></a>
+					</div>
 				</div>
 				<br />
 				<div onclick="toggleBio()" class="panel panel-default pointer">
@@ -93,7 +88,10 @@
 				  		<h5 id="bioHeader">About Myself:</h5>
 				    		<div id="bioContent">
 							<p>
-As indicated in my resume, I have received my Commercial pilot’s license with various ratings from Algonquin Flight Center in North Bay, ON. I have also gained valuable work experience from my employment with Transwest Air. This includes micro-management, dispatching, billing, computer and multiple ground handling skills. After being laid off due to lack of work within this company, I decided to go back to school. I have completed part of my third year of computer science and am currently completing my third year with fourth year classes. So far I have learned such computer languages as Java, C, C++, C#, Objective-C, VB, JavaScript, Assembly, HTML, XML, SQL and Processing. Although I still have a passion for aviation, I also have an enthusiasm for computers and plan to pursue both in the future. My first coop placement was for 8-months at Public Works Government Services. Here I have gained experience in web and mobile phone development. My second coop placement was at The Ottawa Hospital for 4-months. Here I continued to develop my SQL and web development skills. I am now looking for a coop placement that will further my skills and challenge me. Additionally, I am looking for a placement that has long-term potential, since I will be graduating in the year 2015.				
+As indicated in my resume, I have completed part of my fourth year of computer science at Carleton University and will complete my degree in the fall semester. So far, I have learned such computer languages as Java, C, C++, C#, Objective-C, VB, JavaScript, Assembly, HTML, XML, SQL, Prolog and Processing. Furthermore, I have had two coop placements. My first coop placement was for 8-months at Public Works Government Services. Here I have gained experience in web and mobile phone development. My second coop placement was at The Ottawa Hospital for 4-months. Here I continued to develop my SQL and web development skills. I am now looking for a coop placement that will further my skills and challenge me. Additionally, I am looking for a placement that has long-term potential, since this will be my last Coop term.		
+							</p>
+							<p>
+Before my studies at Carleton I pursued a career in aviation. I have received my Commercial pilot’s license with various ratings from Algonquin Flight Center in North Bay, ON. I have also gained valuable work experience from my employment with Transwest Air. This includes micro-management, dispatching, billing, computer and multiple ground handling skills. After being laid off due to lack of work within this company, I decided to go back to school. Although I still have a passion for aviation, I also have an enthusiasm for computers and plan to pursue both in the future.	
 							</p>
 							<p>
 If my qualifications are of interest to you, I would be delighted to meet with you to further discuss employment opportunities.  Should you require additional information or need to discuss my qualifications in more detail, please contact me. In the event that there are no appropriate openings available at this time, I would very much appreciate the opportunity to talk with you more broadly about my job search campaign. Thank you in advance for your time and consideration.
@@ -116,8 +114,6 @@ If my qualifications are of interest to you, I would be delighted to meet with y
 		</div>	
 		<div class="pull-left pointer" onclick="window.scrollTo(0,0);"><small>Scroll to top</small></div>
 		<div class="pull-right"><small>Last updated:</small> December 5th 2013</div>	
-
-		<a  style="display:hidden;" href="doc/ic_launcher.png">.</a>
 	</div>
 </body>
 

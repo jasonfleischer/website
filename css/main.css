@@ -1,7 +1,8 @@
 /*Jason Fleischer*/
 @media screen and (max-width:800px) {
 	/*#googleSearch{ display:none;}*/
-	#vCard{ display:none; }
+	#subH1, #vCard{ display:none; }
+	
 }
 @media screen and (min-width:1000px) {
 	#callMe{ display:none;}
@@ -12,15 +13,19 @@
 #resume{ display:none;}
 #content{ max-width:1000px; }
 #subH1{ color: #EEE; }
+#contactInfo{ font-size:18px; }
+#personalInfo{ margin: 0px 5px 0px 5px;}
 .pointer{ cursor:pointer;}
 .page-header{
 	background-image:url('../img/banner.jpg');
 	background-position:center top;
-	padding: 9px 15px 15px 15px  !important;
+	padding: 9px 15px 18px 15px  !important;
 	border-bottom: 0px ;
 	background-repeat:no-repeat;
-	margin: 10px  0px 10px  !important;
+	margin: 10px  0px -3px 0px !important;
 	color: #FFF !important;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
 	text-shadow: 1px 1px #000000;
 }
 
