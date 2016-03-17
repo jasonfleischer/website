@@ -1,12 +1,19 @@
 /*Jason Fleischer*/
 @media screen and (max-width:800px) {
 	/*#googleSearch{ display:none;}*/
-	#subH1, #vCard{ display:none; }
+	#subH1, #vCard, #pIemailMe, i{ display:none; }
 	
 }
 @media screen and (min-width:1000px) {
 	#callMe{ display:none;}
-	p{ text-indent:40px;}
+	.indent{ text-indent:40px;}
+}
+body{ 	
+	background-color: white;/* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, #F0F0F0 , white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #F0F0F0, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #F0F0F0, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #F0F0F0 , white); /* Standard syntax (must be last) */
 }
 #pIemailMe{ padding-top:10px;}
 #resourceobject{ width:100%; height:600px;}
@@ -14,42 +21,20 @@
 #content{ max-width:1000px; margin-top:20px; }
 #subH1{ color: #EEE; }
 #contactInfo{ font-size:18px; }
-#git, #fbM, #resumeM{
-	padding: 0px 25px 0px 25px  !important;
-}
-#home{
-	padding-right: 25px  !important;
-}
+#git, #fbM, #resumeM{ padding: 0px 20px 0px 20px  !important; }
+#home{ padding-right: 25px  !important; }
 #personalInfo{ margin: 0px 5px 0px 5px;}
-.pointer{ cursor:pointer; font-size:18px;}
-.banner1{
+#name{ font-size:25px; }
+.pointer{ cursor:pointer; }
+.large{ font-size:18px; }
+.banner{
 	background-image:url('../img/banner.jpg');
-	
-	padding: 9px 15px 18px 15px  !important;
-	border-bottom: 0px ;
 	background-repeat: no-repeat;
-	height:100%;
-	background-color: #000;
-	margin: 10px  0px -3px 0px !important;
-	color: #FFF !important;
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-	text-shadow: 1px 1px #000000;
-}
-.banner2{
-	background-image:url('../img/banner.jpg');
-	
-	background-repeat: no-repeat;
-	height:100%;
 	background-color: #000 !important;
 	margin: 0px  0px 0px 0px !important;
 	color: #FFF !important;
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 	text-shadow: 1px 1px #000000;
 }
 
