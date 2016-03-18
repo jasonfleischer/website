@@ -3,8 +3,7 @@
 	/*#googleSearch{ display:none;}*/
 	#subH1, #vCard, #pIemailMe, .hide-mobile, i{ display:none; }
 	#email{ font-size: 16px; padding-top:2px;}  
-	#residence{ font-size: 14px; padding-top:6px;}  
-	
+	#residence{ font-size: 14px; padding-top:6px;}
 }
 @media screen and (min-width:1000px) {
 	#callMe{ display:none;}
