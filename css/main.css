@@ -1,7 +1,7 @@
 /*Jason Fleischer*/
 @media screen and (max-width:800px) {
 	/*#googleSearch{ display:none;}*/
-	#subH1, #vCard, #pIemailMe, i{ display:none; }
+	#subH1, #vCard, #pIemailMe, .hide-mobile, i{ display:none; }
 	
 }
 @media screen and (min-width:1000px) {
