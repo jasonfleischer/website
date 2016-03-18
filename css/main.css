@@ -2,6 +2,7 @@
 @media screen and (max-width:800px) {
 	/*#googleSearch{ display:none;}*/
 	#subH1, #vCard, #pIemailMe, .hide-mobile, i{ display:none; }
+	#residence, #email{ font-size: 16px; } 
 	
 }
 @media screen and (min-width:1000px) {
