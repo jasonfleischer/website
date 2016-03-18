@@ -2,7 +2,8 @@
 @media screen and (max-width:800px) {
 	/*#googleSearch{ display:none;}*/
 	#subH1, #vCard, #pIemailMe, .hide-mobile, i{ display:none; }
-	#residence, #email{ font-size: 16px; } 
+	#email{ font-size: 16px; padding-top:2px;}  
+	#residence{ font-size: 14px; padding-top:6px;}  
 	
 }
 @media screen and (min-width:1000px) {
