@@ -12,7 +12,7 @@ body{
 	background-color: white;/* For browsers that do not support gradients */    
   
     background-attachment: fixed; 
-	background-image: url('../img/IMG3.JPG'); 
+	background-image: url('../img/IMG3.jpg'); 
 	background-repeat: no-repeat; 
 	background-position: right top; 
 	background-size:cover;
