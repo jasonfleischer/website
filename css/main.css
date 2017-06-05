@@ -10,13 +10,9 @@
 }
 body{ 	
 	background-color: white;/* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left, #F0F0F0 , white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #F0F0F0, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #F0F0F0, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #F0F0F0 , white); /* Standard syntax (must be last) */
   
     background-attachment: fixed; 
-	background-image: url('../img/IMG3.JPG'); 
+	background-image: url('../img/IMG3.jpg'); 
 	background-repeat: no-repeat; 
 	background-position: right top; 
 	background-size:cover;
