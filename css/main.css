@@ -40,7 +40,7 @@ h3 {
 #content{ max-width:1000px; margin-top:20px; }
 #subH1{ color: #EEE; }
 #contactInfo{ font-size:18px; }
-#git, #fbM, #resumeM{ padding: 0px 20px 0px 20px  !important; }
+#git, #linkedin, #fbM, #resumeM{ padding: 0px 20px 0px 20px  !important; }
 #home{ padding-right: 25px  !important; }
 #personalInfo{ margin: 0px 5px 0px 5px;}
 #name{ font-size:25px; }
@@ -55,14 +55,20 @@ border-style: none;
 .banner{
 	/*background-image:url('../img/banner.jpg'); background-repeat: no-repeat;*/
 	    background-color: darkslategrey !important;
-	    background-image: linear-gradient(to bottom right, darkslategrey, #dddddd);
+	    background-image: linear-gradient(to bottom right, #2f4f4f, #b5c7c7);
 	margin: 0px  0px 0px 0px !important;
 	color: #FFF !important;
 	border-top-right-radius: 8px;
 	border-top-left-radius: 8px;
-	text-shadow: 1px 1px #000000;
+	text-shadow: 1px 1px #777;
+}
+#name {
+	text-shadow: 1px 1px #444;
 }
 #photo {
 	border-radius: 8px;
 	height:130px;
+	margin-top: 3px;
+	margin-right: 3px;
+	float: right;
 }
