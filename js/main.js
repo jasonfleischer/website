@@ -18,8 +18,8 @@ function resumePage(){
 	document.getElementById('resume').style.display = 'block';
 }
 function git(){
-	document.getElementById("resumeM").className = "";
-	document.getElementById("git").className = "active";
+	//document.getElementById("resumeM").className = "";
+	//document.getElementById("git").className = "active";
 	//document.getElementById("fbM").className = "";
 }
 function openFaceBook(){
