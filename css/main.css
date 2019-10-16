@@ -48,14 +48,18 @@ h3 {
 	border-color: #ddd !important;
 }
 .banner{
-	background-image:url('../img/banner.jpg'); background-repeat: no-repeat;
+	/*background-image:url('../img/banner.jpg'); background-repeat: no-repeat;
 /*	background-color: darkslategrey !important;
 //	background-image: linear-gradient(to bottom right, #2f4f4f, #b5c7c7);*/
+
+background-image:url('../img/bloom.png'); background-repeat: repeat;
 	margin: 0px  0px 0px 0px !important;
-	color: #FFF !important;
+	color: #333 !important;
 	border-top-right-radius: 8px;
 	border-top-left-radius: 8px;
-	text-shadow: 1px 1px #777;
+
+	
+	
 }
 
 #pIemailMe{ 
@@ -91,7 +95,8 @@ h3 {
 	font-size:25px; 
 }
 #name {
-	text-shadow: 1px 1px #444;
+	color: #333;
+	text-shadow: 1px 1px white;
 }
 #photo {
 	border-radius: 8px;
