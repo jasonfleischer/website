@@ -1,4 +1,3 @@
-//Jason Fleischer
 function homePage(){
 	window.scrollTo(0, 0);
 	document.getElementById("resumeM").className = "";
