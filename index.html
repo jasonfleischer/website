@@ -6,102 +6,73 @@
 	<title>Jason Fleischer - Computer Scientist</title>
 	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<script src="js/jquery-1.10.2.min.js"></script>	
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
 </head>
 <body>
-	<div id="content" class="center-block container">
-		<nav class="navbar navbar-inverse" >
-			<div class="navbar-header" >
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a id="home" onclick="homePage();" class="navbar-brand pointer" >Jason Fleischer</a>
+	<header>
+		<ul >
+			<li id="li_icon"><img src="img/icon.png" alt="icon"></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="https://github.com/jasonfleischer" target="_blank">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/in/jason-fleischer-150242127" target="_blank">Linkedin</a></li>
+		</ul>
+	</header>
+	<div>
+		<div id="banner"> 
+			<img id="photo" src="img/me_bw.jpg" alt="Jason's Picture">
+			<div id="name"><strong>JASON <span class="hide_mobile">R. A.</span> FLEISCHER</strong></div>
+			<br/>
+			<br/>
+			<div id="residence" class="pointer large" onclick="window.open('https://www.google.com/maps/place/6+Bedford+Crescent,+Ottawa,+ON,+Canada')">
+				<small><strong>Address:&nbsp;&nbsp;</strong></small>6 Bedford Crescent, Ottawa<span class="hide_mobile">, Ontario,</span> Canada&nbsp;&nbsp;
+				<span class="glyphicon glyphicon-globe"></span>
 			</div>
-			<div class="navbar-collapse collapse" id="navbar-collapse-1" >
-				<ul class="nav navbar-nav">
-					<li class="pointer" id="resumeM" onclick="resumePage()">
-						<a ><span class="glyphicon glyphicon-file"></span>&nbsp;Resume</a>
-					</li>
-					<li id="linkedin"><a href="https://www.linkedin.com/in/jason-fleischer-150242127" target="_blank">
-						<span class="glyphicon glyphicon-globe"></span>&nbsp;LinkedIn</a>
-					</li>
-					<li id="git"><a href="https://github.com/jasonfleischer" target="_blank">
-						<span class="glyphicon glyphicon-globe"></span>&nbsp;Git Repo</a>
-					</li>
-				</ul>
+			<div id="email" class="pointer large" onclick="window.location.href ='mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer';"> 
+				<small><strong>Email:&nbsp;&nbsp;</strong></small>jason_fleischer@hotmail.ca&nbsp;&nbsp;
+				<span class="glyphicon glyphicon-envelope"></span>
 			</div>
-		</nav>
-		<div id='personalInfo'>
-			<div> 
-				<div class="panel panel-default banner"> 
-					<div class="panel-body">
-						<div id="name" style="float:left;"><strong>Jason <span class="hide-mobile">R. A.</span> Fleischer</strong></div>
-						<img id="photo" src="img/me_2.jpg" alt="Jason's Picture">
-						<br/>
-						<br/>
-						<br/>
-						<div id="phone" class="pointer large" onclick="window.location.href='tel:613-407-0602';"> 
-							<small><strong><i>Cell:&nbsp;&nbsp;</i></strong></small>613-407-0602&nbsp;&nbsp;
-							<span class="glyphicon glyphicon-phone"></span> 
-						</div> 
-						<div id="email" class="pointer large" onclick="window.location.href ='mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer';"> 
-							<small><strong><i>Email:&nbsp;&nbsp;</i></strong></small>jason_fleischer@hotmail.ca&nbsp;&nbsp;
-							<span class="glyphicon glyphicon-envelope"></span>
-						</div>
-						<div id="residence" class="pointer large" onclick="window.open('https://www.google.com/maps/place/6+Bedford+Crescent,+Ottawa,+ON,+Canada')">
-							<small><strong><i>Residence:&nbsp;&nbsp;</i></strong></small>6 Bedford Crescent, Ottawa<span class="hide-mobile">, Ontario,</span> Canada&nbsp;&nbsp;
-							<span class="glyphicon glyphicon-globe"></span>
-						</div>
-					</div>
-				</div>
-				<br/>
-				<div class="panel panel-default">
-					<div class="panel-body" >
-						<h3>Bachelor of Computer Science</h3> 
-						<h4><i>Mobile and Social Networking Applications (Co-op Education)</i></h4>
-						<h5 class="pointer" onclick="window.open('http://www.carleton.ca')">Carleton University, Ottawa, ON</h5> 
-						<p>Graduated: January 2015</p> 
-						<br/>
-						<div><strong>About Myself:</strong></div>
-						<br/>
-						<div id="bioContent">
-							<p class="indent">
-								As indicated in my resume, I once pursued a career in aviation. I received my commercial pilot’s license from Algonquin Flight Center along with other ratings and licenses. I have also gained valuable work experience from my employment with Transwest Air, a small airline that operates in Saskatchewan. This experience includes micro-management, dispatching, billing, computer and multiple ground handling skills. After being laid off, due to lack of work within this company, I decided to enroll at Carleton University for computer science. Although I still have an interest in aviation, my future at this time is focused in the field of computer science.
-							</p>
-							<p class="indent">
-								In January 2015, I graduated from Carleton University with a Bachelors degree in computer science. My chosen stream at Carleton was called mobile and social networking applications. During my time at Carleton I had three co-op placements. My first coop placement was for 8-months at Public Works Government Services. Here I gained experience in web and mobile phone development. My second coop placement was at The Ottawa Hospital for 4-months. Here I continued to develop my SQL and web development skills. My last coop position was at HCN (Hotel Communication Network Inc.) as an Android developer. After graduation, I continued to work full-time with HCN for two years. At HCN I really grew as a developer and person. I am currently working for Paradigm Electrons as both an Android and IOS developer.						
-							</p>		
-							<br />
-						</div>
-						<!-- TODO
-						<br/>
-						<div><strong>Projects I have worked on:</strong></div>
-						<br/>
-						<h5 class="pointer" onclick="window.open('http://www.carleton.ca')">HCN Navigator</h5>
-						<h5 class="pointer" onclick="window.open('http://www.carleton.ca')">Subwoofer Controller</h5>  
-						<h5 class="pointer" onclick="window.open('http://www.carleton.ca')">ARC Genesis</h5>  -->
-					</div>
-				</div>  
+			<div id="phone" class="pointer large" onclick="window.location.href='tel:613-407-0602';"> 
+				<small><strong>Cell:&nbsp;&nbsp;</strong></small>613-407-0602&nbsp;&nbsp;
+				<span class="glyphicon glyphicon-phone"></span> 
 			</div>
 		</div>
-		<div id='resume' class="panel panel-default">
-			<div class="panel-body">
-				<div class="resourcecontent resourcepdf">
-					<object id="resourceobject" data="doc/JasonFleischerResume.pdf" type="application/pdf">
-						<param name="src" value="doc/JasonFleischerResume.pdf">
-						Click <a href="doc/JasonFleischerResume.pdf">HERE</a> to download my resume
-					</object>
-				</div>
-			</div>
-		</div>	
+		<div id="education">
+			<div id="degree">Bachelor of Computer Science</div> 
+			<br/>
+			<div>Mobile <span class="hide_mobile">and Social Networking</span> Applications, Co-op Education</div>
+			<div class="pointer" onclick="window.open('http://www.carleton.ca')"><i>Carleton University, Ottawa, ON</i></div> 
+			<div><i>Graduated: January 2015</i></div> 
+		</div>
+		<div id="bio">
+			<br/>
+			<br/>
+			<div><strong>About Myself:</strong></div>
+			<p>
+				As indicated in my resume, I once pursued a career in aviation. I received my commercial pilot’s license from Algonquin Flight Center along with other ratings and licenses. I have also gained valuable work experience from my employment with Transwest Air, a small airline that operates in Saskatchewan. This experience includes micro-management, dispatching, billing, computer and multiple ground handling skills. After being laid off, due to lack of work within this company, I decided to enroll at Carleton University for computer science. Although I still have an interest in aviation, my future at this time is focused in the field of computer science.
+			</p>
+			<p>
+				In January 2015, I graduated from Carleton University with a bachelors degree in computer science. My chosen stream at Carleton was called mobile and social networking applications. During my time at Carleton I had three co-op placements. My first co-op placement was for 8-months at Public Works Government Services. Here I gained experience in web and mobile phone development. My second co-op placement was at The Ottawa Hospital for 4-months. Here I continued to develop my SQL and web development skills. My last co-op position was at HCN (Hotel Communication Network Inc.) as an Android developer. After graduation, I continued to work full-time with HCN for two years. 
+			</p>
+			<p>
+				In Febuary 2017, I joined Paradigm Electronics Inc. Paradigm is a company that specializes in high-end audio products. I am currently still employed with this company as an application developer for desktop, web, Android and iOS platforms.					
+			</p>		
+			<br />
+			<br/>
+		</div>
 	</div>
+	<div id="resume">	
+		<br />
+		<div><strong>Resume:</strong></div>
+		<br/>
+		<object id="resume_object" data="doc/JasonFleischerResume.pdf" type="application/pdf">
+			<param name="src" value="doc/JasonFleischerResume.pdf">
+			Click <a href="doc/JasonFleischerResume.pdf">HERE</a> to download my resume
+		</object>
+	</div>
+	<br/>
+	<br/>
+	<footer>
+		<p>Jason Fleischer</p>
+	</footer>
+	<!--<script src="js/main.js"></script>-->
 </body>
 </html>
