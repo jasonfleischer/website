@@ -19,7 +19,7 @@
 		padding-right: 30px;
 	}
 	header ul {
-		padding-left: 20px;
+		padding-left: 25px;
 	}
 	header li { 
 		padding: 20px 10px 20px 10px; 
@@ -37,7 +37,7 @@
 		padding-right: 70px;
 	}
 	header ul {
-		padding-left: 52px;
+		padding-left: 68px;
 	}
 	header li { 
 		padding: 20px 20px 20px 20px; 
@@ -79,7 +79,7 @@ header li {
 	list-style: none;
 }
 header img{ 
-	width: 18px;
+	width: 42px;
 }
 header a {
 	color: #eee;
@@ -138,6 +138,11 @@ footer p {
 }
 #bio p {
 	max-width: 1200px;
+}
+#li_icon {
+  padding: 0px;
+  padding-top: 10px;
+  margin-right: 20px;
 }
 #photo {
 	border-radius: 50%;
