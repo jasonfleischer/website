@@ -136,6 +136,9 @@ footer p {
 #resume strong, #bio strong {
 	text-shadow: 1px 1px white;
 }
+#bio p {
+	max-width: 1200px;
+}
 #photo {
 	border-radius: 50%;
 	height:190px;
