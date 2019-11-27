@@ -129,9 +129,13 @@ footer p {
 #name {
 	float: left;
 }
-#name, #degree { 
+#name { 
 	font-size: 25px; 
 	text-shadow: 1px 1px white;
+}
+#degree { 
+	font-size: 25px; 
+	text-shadow: 1px 1px #eee;
 }
 #resume strong, #bio strong {
 	text-shadow: 1px 1px white;
