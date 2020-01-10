@@ -1,78 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jason Fleischer - Computer Scientist</title>
-	<link rel="icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="css/main.css">
-</head>
+<title>Jason Fleischer - Computer Scientist</title>
+<link rel="icon" href="imgs/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Modified W3 template -->
 <body>
-	<header>
-		<ul >
-			<li id="li_icon"><img src="img/icon.png" alt="icon"></li>
-			<li><a href="#resume">Resume</a></li>
-			<li><a href="https://github.com/jasonfleischer" target="_blank">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/jason-fleischer-150242127" target="_blank">Linkedin</a></li>
-		</ul>
-	</header>
-	<div>
-		<div id="banner"> 
-			<img id="photo" src="img/me_bw.jpg" alt="Jason's Picture">
-			<div id="name"><strong>JASON <span class="hide_mobile">R. A.</span> FLEISCHER</strong></div>
-			<br/>
-			<br/>
-			<div id="residence" class="pointer large" onclick="window.open('https://www.google.com/maps/place/6+Bedford+Crescent,+Ottawa,+ON,+Canada')">
-				<small><strong>Address:&nbsp;&nbsp;</strong></small>6 Bedford Crescent, Ottawa<span class="hide_mobile">, Ontario,</span> Canada&nbsp;&nbsp;
-				<span class="glyphicon glyphicon-globe"></span>
-			</div>
-			<div id="email" class="pointer large" onclick="window.location.href ='mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Developer';"> 
-				<small><strong>Email:&nbsp;&nbsp;</strong></small>jason_fleischer@hotmail.ca&nbsp;&nbsp;
-				<span class="glyphicon glyphicon-envelope"></span>
-			</div>
-			<div id="phone" class="pointer large" onclick="window.location.href='tel:613-407-0602';"> 
-				<small><strong>Cell:&nbsp;&nbsp;</strong></small>613-407-0602&nbsp;&nbsp;
-				<span class="glyphicon glyphicon-phone"></span> 
-			</div>
-		</div>
-		<div id="education">
-			<div id="degree">Bachelor of Computer Science</div> 
-			<br/>
-			<div>Mobile <span class="hide_mobile">and Social Networking</span> Applications, Co-op Education</div>
-			<div class="pointer" onclick="window.open('http://www.carleton.ca')">Carleton University, Ottawa, ON</div> 
-			<div><i>Graduated January 2015</i></div> 
-		</div>
-		<div id="bio">
-			<br/>
-			<br/>
-			<div><strong>About Myself:</strong></div>
-			<p>
-				As indicated in my resume, I once pursued a career in aviation. I received my commercial pilot’s license from Algonquin Flight Center along with other ratings and licenses. I have also gained valuable work experience from my employment with Transwest Air, a small airline that operates in Saskatchewan. This experience includes micro-management, dispatching, billing, computer and multiple ground handling skills. After being laid off, due to lack of work within this company, I decided to enroll at Carleton University for computer science. Although I still have an interest in aviation, my future at this time is focused in the field of computer science.
-			</p>
-			<p>
-				In January 2015, I graduated from Carleton University with a bachelor's degree in computer science. My chosen stream at Carleton was called mobile and social networking applications. During my time at Carleton I had three co-op placements. My first co-op placement was for 8-months at Public Works Government Services. Here I gained experience in web and mobile phone development. My second co-op placement was at The Ottawa Hospital for 4-months. Here I continued to develop my SQL and web development skills. My last co-op position was at HCN (Hotel Communication Network Inc.) as an Android developer. After graduation, I continued to work full-time with HCN for two years. 
-			</p>
-			<p>
-				In February 2017, I joined Paradigm Electronics Inc. Paradigm is a company that specializes in high-end audio products. I am currently still employed with this company as an application developer for desktop, web, Android and iOS platforms.					
-			</p>		
-			<br />
-			<br/>
-		</div>
-	</div>
-	<div id="resume">	
-		<br />
-		<div><strong>Resume:</strong></div>
-		<br/>
-		<object id="resume_object" data="doc/JasonFleischerResume.pdf" type="application/pdf">
-			<param name="src" value="doc/JasonFleischerResume.pdf">
-			Click <a href="doc/JasonFleischerResume.pdf">HERE</a> to download my resume
-		</object>
-		<br/>
-		<br/>
-	</div>
-	<footer>
-		<p>Jason Fleischer</p>
-	</footer>
-	<!--<script src="js/main.js"></script>-->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" >
+    <span class="w3-center w3-xlarge w3-wide w3-animate-opacity">
+      <img src="imgs/icon.svg" class="w3-hover-opacity full_width" alt="logo">
+    </span>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Mobile Application Developer</em></p>
+  <p>
+  In January 2015, I graduated from Carleton University with a bachelor's degree in computer science. My chosen stream at Carleton was called mobile and social networking applications. During my time at Carleton I had three co-op placements. My first co-op placement was for 8-months at Public Works Government Services. Here I gained experience in web and mobile phone development. My second co-op placement was at The Ottawa Hospital for 4-months. Here I continued to develop my SQL and web development skills. My last co-op position was at HCN (Hotel Communication Network Inc.) as an Android developer. After graduation, I continued to work full-time with HCN for two years.
+  </p>
+  <p>
+  In February 2017, I joined Paradigm Electronics Inc. Paradigm is a company that specializes in high-end audio products. I am currently still employed with this company as an application developer for desktop, web, Android and iOS platforms.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Jason Robert Alexander Fleischer</b></p><br>
+      <img src="imgs/me.jpg" class="w3-round w3-image w3-hover-opacity" onclick="onClick(this)" alt="Jason Fleischer" width="350" height="233">
+    </div>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+      As indicated in my resume, I once pursued a career in aviation. I received my commercial pilot’s license from Algonquin Flight Center along with other ratings and licenses. I have also gained valuable work experience from my employment with Transwest Air, a small airline that operates in Saskatchewan. This experience includes micro-management, dispatching, billing, computer and multiple ground handling skills. Although I still have an interest in aviation, my future at this time is focused in the field of computer science.
+      </p>
+      <p>
+      If my qualifications are of interest to you, I would be delighted to meet with you to further discuss employment opportunities. Should you require additional information or need to discuss my qualifications in more detail, please contact me. Thank you in advance for your time and consideration.</p>
+    </div>
+  </div>
+  <p class="w3-center"><em>&nbsp;</em></p>
+  <div id="education_old_id">
+      <div class="w3-wide w3-center" id="degree">Bachelor of Computer Science</div> 
+      <br/>
+      <div class=" w3-center">Mobile <span class="hide_mobile">and Social Networking</span> Applications, Co-op Education</div>
+      <div class=" w3-center pointer" onclick="window.open('http://www.carleton.ca')">Carleton University, Ottawa, ON</div> 
+      <div class=" w3-center">Graduated January 2015</div> 
+    </div>
+</div>
+
+<!-- Second Parallax -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Resume</span>
+  </div>
+</div>
+
+<!-- Resmue Section -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">RESUME</h3>
+  <div class=" w3-container "  id="resume"> 
+    <object id="resume_object" data="doc/Resume%20-%20Jason%20Fleischer.pdf" type="application/pdf">
+      <param name="src" value="doc/Resume%20-%20Jason%20Fleischer.pdf">
+      Click <a href="doc/Resume%20-%20Jason%20Fleischer.pdf">HERE</a> to download my resume
+    </object>
+    <br/>
+    <br/>
+  </div>
+
+  <h3 class="w3-center">SKILLS</h3>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Android Deveopment</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>iOS Deveopment</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:93%">93%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Qt / QML</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Html / JS / CSS</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Shell Scripting</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:92%">92%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>GIMP</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <br/> <br/>
+
+  <h3 class="w3-center">PROJECTS</h3>
+  <p class="w3-center">
+    <em>Here are some various products I worked on.
+      <br/> 
+      Click on the images to make them bigger and view the descriptions
+    </em>
+  </p>
+  <br/>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="imgs/arc_genesis_1.jpg" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="ARC Genesis is room correction software for Desktop platforms">
+    </div>
+    <div class="w3-col m3">
+      <img src="imgs/arc_genesis_POY.png" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="ARC Genesis was claimed product of the year by absolute sound magazine">
+    </div>
+    <div class="w3-col m3">
+      <img src="imgs/arc_genesis_2.jpg" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="ARC Genesis was developed with QML">
+    </div>
+    <div class="w3-col m3">
+      <img src="imgs/sub_control_ml.jpg" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="Martin Logan Subwoofer control app for both Android and iOS">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="imgs/sub_control_p.jpg" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="Paradigm Subwoofer control app for both Android and iOS">
+    </div>
+    <div class="w3-col m3">
+      <img src="imgs/arc_room_correction.jpg" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="Anthem Room Correction app for both Android and iOS">
+    </div>
+    <div class="w3-col m3">
+      <img src="imgs/hcn_tablet.jpg" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="HCN Navigator is a tablet based application for hotel rooms">
+    </div>
+    <div class="w3-col m3">
+      <img src="imgs/hcn.png" onclick="onClick(this)" class="w3-hover-opacity full_width" alt="HCN Navigator is an Android application">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="hide(this)">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image" src="imgs/placeholder.png" alt="modal img">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+ 
+<!-- Third Parallax -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">Contact</span>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+<h3 class="w3-center">CONTACT</h3>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m6 w3-container">
+      <img src="imgs/map.png" onclick="onClick(this)" class="w3-image w3-round w3-hover-opacity full_width" alt="personal address">
+    </div>
+    <div class="w3-col m6 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" onclick="window.open('https://www.google.com/maps/place/6+Bedford+Crescent,+Ottawa,+ON,+Canada')"></i>6 Bedford Crescent, Ottawa<span class="hide_mobile">, ON, Canada</span><br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" onclick="window.location.href ='tel:+16134070602';"></i> 1-613-407-0602<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" onclick="window.location.href ='mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Inquiry';"></i>  jason_fleischer@hotmail.ca<br>
+      </div>
+      <button class="w3-button w3-black  w3-section" type="submit" onclick="window.location.href ='mailto:jason_fleischer@hotmail.ca?Subject=Jason%20Fleischer%20-%20Inquiry';">
+          <i class="fa fa-paper-plane"></i> &nbsp;&nbsp;&nbsp;SEND EMAIL MESSAGE
+        </button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32 w3-opacity">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://github.com/jasonfleischer" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/jason-fleischer-150242127" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.facebook.com/Jason.R.A.Fleischer" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  </div>
+</footer>
+ 
+<script src="js/w3.js" ></script>
 </body>
 </html>
