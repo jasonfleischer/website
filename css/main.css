@@ -81,6 +81,7 @@ html, body {
 }
 #logo {
 	height: 100%;
+	padding: 20px;
 }
 #resume {
 	padding-top: 15px;
